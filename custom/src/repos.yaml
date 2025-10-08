@@ -1,0 +1,144 @@
+---
+odoo:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: https://github.com/odoo/odoo.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+# enterprise:
+#   defaults:
+#     depth: ${WAFT_DEPTH_DEFAULT}
+#   remotes:
+#     origin: git@github.com:odoo/enterprise.git
+#   target: origin ${ODOO_VERSION}
+#   merges:
+#     - origin ${ODOO_VERSION}
+
+enterprise:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:Tritel-Technologies/enterprise.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+Tritel-Technologies/tritel-addons:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:Tritel-Technologies/tritel-erp.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+tritel/kra-etims:
+  defaults:
+    depth: ${WAFT_DEPTH_MERGE}
+  remotes:
+    origin: git@github.com:Tritel-Technologies/kra-etims.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+Tritel-Technologies/tritel-purchased:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:Tritel-Technologies/custom-addons.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+OCA/account-invoicing:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:OCA/account-invoicing.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+OCA/commission:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:OCA/commission.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+OCA/purchase-workflow:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:OCA/purchase-workflow.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+OCA/web:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:OCA/web.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+# OCA/stock-logistics-warehouse:
+#   defaults:
+#     depth: ${WAFT_DEPTH_DEFAULT}
+#   remotes:
+#     origin: git@github.com:OCA/stock-logistics-warehouse.git
+#   target: origin ${ODOO_VERSION}
+#   merges:
+#     - origin ${ODOO_VERSION}
+
+OCA/server-ux:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:OCA/server-ux.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+OCA/hr:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:OCA/hr.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+CybroOdoo/OpenHRMS:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:CybroOdoo/OpenHRMS.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+OCA/queue-job:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:OCA/queue.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+OCA/rest-framework:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:OCA/rest-framework.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}

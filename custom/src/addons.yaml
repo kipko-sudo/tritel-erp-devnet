@@ -1,0 +1,48 @@
+---
+odoo/addons:
+    - "*"
+
+odoo/odoo/addons:
+    - "*"
+
+enterprise:
+    - "*"
+
+Tritel-Technologies/tritel-addons:
+    - "*"
+
+tritel/kra-etims:
+    - "*"
+
+Tritel-Technologies/tritel-purchased:
+    - "*"
+
+OCA/account-invoicing:
+    - account_invoice_force_number
+
+OCA/purchase-workflow:
+    - purchase_discount
+
+OCA/web:
+    - "*"
+
+# OCA/stock-logistics-warehouse:
+#     - "*"
+
+OCA/server-ux:
+    - "*"
+
+OCA/hr:
+    - hr_contract_reference
+    - hr_employee_age
+    - hr_recruitment_torecruit
+
+CybroOdoo/OpenHRMS:
+    - hr_organizational_chart
+    - hrms_dashboard
+
+OCA/queue-job:
+    - "*"
+
+OCA/rest-framework:
+    - "*"
