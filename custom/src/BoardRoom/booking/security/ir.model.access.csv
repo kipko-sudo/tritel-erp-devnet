@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_boardroom_booking_room_all,boardroom.booking.room,model_boardroom_booking_room,base.group_user,1,1,1,1
+access_boardroom_booking_all,boardroom.booking,model_boardroom_booking,base.group_user,1,1,1,1

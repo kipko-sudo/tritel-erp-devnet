@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_booking_tree" model="ir.ui.view">
+        <field name="name">booking.tree</field>
+        <field name="model">boardroom.booking</field>
+        <field name="arch" type="xml">
+            <tree decoration-success="state == 'completed'" decoration-danger="state == 'in_use'">
+                <field name="boardroom_id"/>
+                <field name="start_datetime"/>
+                <field name="end_datetime"/>
+                <field name="state"/>
+                <field name="requester_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_booking_kanban" model="ir.ui.view">
+        <field name="name">booking.kanban</field>
+        <field name="model">boardroom.booking</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="state"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_card #{record.state.value}">
+                            <field name="boardroom_id"/>
+                            <field name="start_datetime"/>
+                            <field name="end_datetime"/>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <record id="view_booking_calendar" model="ir.ui.view">
+        <field name="name">booking.calendar</field>
+        <field name="model">boardroom.booking</field>
+        <field name="arch" type="xml">
+            <calendar date_start="start_datetime" date_stop="end_datetime" color="state">
+                <field name="boardroom_id"/>
+            </calendar>
+        </field>
+    </record>
+    <record id="action_booking" model="ir.actions.act_window">
+        <field name="name">Bookings</field>
+        <field name="res_model">boardroom.booking</field>
+        <field name="view_mode">tree,kanban,calendar,form</field>
+    </record>
+</odoo>

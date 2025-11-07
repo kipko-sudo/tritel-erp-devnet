@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_boardroom_tree" model="ir.ui.view">
+        <field name="name">boardroom.tree</field>
+        <field name="model">boardroom.booking.room</field>
+        <field name="arch" type="xml">
+            <tree decoration-success="status == 'available'" decoration-danger="status == 'in_use'">
+                <field name="name"/>
+                <field name="capacity"/>
+                <field name="status"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_boardroom" model="ir.actions.act_window">
+        <field name="name">Boardrooms</field>
+        <field name="res_model">boardroom.booking.room</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
